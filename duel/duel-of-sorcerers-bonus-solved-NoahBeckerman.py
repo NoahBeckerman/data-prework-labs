@@ -76,4 +76,4 @@ s_avg =  sum(saruman_power)/len(saruman_power) # same as prior project
 print(" - Gandalf's Average Power: {0}\n - Saruman's Average Power {1}".format(g_avg, s_avg))
 # 4. Standard deviation of each of the spell lists.
 print(" - Standard Deviation for Gandalf = {0}".format(statistics.stdev(gandalf_power))) # Using imported statistics library from python to get the standard deviation.
-print(" - Standard Deviation for Saruman = {0}".format(statistics.stdev(saruman_power))) # Using imported statistics library from python to get the standard deviation.
+print(" - Standard Deviation for Saruman = {0}".format(statistics.stdev(saruman_power)))
