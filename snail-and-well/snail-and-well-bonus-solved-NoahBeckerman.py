@@ -35,4 +35,4 @@ avrg_prog = sum(advance_cm)/len(advance_cm) # adding all distances travled and d
 print("Average Progress = {0}".format(avrg_prog))
 
 # What is the standard deviation of your displacement during the day?
-print("Standard Deviation = {0}".format(statistics.stdev(advance_cm))) # Using imported statistics library from python to get the standard deviation.
+print("Standard Deviation = {0}".format(statistics.pstdev(advance_cm))) # Using imported statistics library from python to get the standard deviation.
