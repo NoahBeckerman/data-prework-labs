@@ -39,3 +39,5 @@ print("Average number of person(s) on bus: {0}".format(avg_persons))
 
 print("-----------")
 print("Standard Deviation for person(s): {0}".format(statistics.pstdev(total_capacity)))# Using imported statistics library from python to get the standard deviation.
+
+#3/22/19

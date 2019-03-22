@@ -77,3 +77,5 @@ print(" - Gandalf's Average Power: {0}\n - Saruman's Average Power {1}".format(g
 # 4. Standard deviation of each of the spell lists.
 print(" - Standard Deviation for Gandalf = {0}".format(statistics.pstdev(gandalf_power))) # Using imported statistics library from python to get the standard deviation.
 print(" - Standard Deviation for Saruman = {0}".format(statistics.pstdev(saruman_power)))
+
+#3/22/19

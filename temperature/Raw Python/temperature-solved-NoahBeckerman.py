@@ -92,3 +92,5 @@ print("\n")
 
 #The Relation between them after you multiply ºC by '1.8' (converting to ºF) is the same.
 print(" - ºF: {0}\n - ºC: {1}\n - Difference: {2}".format((statistics.pstdev(temperatures_F)), (statistics.pstdev(temperatures_C) * 1.8), (statistics.pstdev(temperatures_F) - (statistics.pstdev(temperatures_C) * 1.8))))
+
+#3/22/19

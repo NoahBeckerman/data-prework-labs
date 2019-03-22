@@ -58,3 +58,5 @@ out_of_bounds = [out for out in points if distance_from_center(out) > 9] # Check
 for arrows in out_of_bounds: # loop for each arrow that is found and print
   print("OUT OF BOUNDS ARROW: {0}".format(arrows)) 
 print("Total out of bounds arrows: {0}".format(len(out_of_bounds)))
+
+#3/22/19

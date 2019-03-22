@@ -36,3 +36,5 @@ print("Average Progress = {0}".format(avrg_prog))
 
 # What is the standard deviation of your displacement during the day?
 print("Standard Deviation = {0}".format(statistics.pstdev(advance_cm))) # Using imported statistics library from python to get the standard deviation.
+
+#3/22/19

@@ -28,3 +28,5 @@ while (accumulated_distance_cm < well_height_cm):
 print('Days =', days)
 
 # The total days elapsed is 11 because on the 10th night the snail drops to 100cm, the next morning the snail moves 30cm making a total of 130cm which is 5cm over the well height, thus removing the snail from the wells clutches!!!
+
+#3/22/19
