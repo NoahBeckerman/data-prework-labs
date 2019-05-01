@@ -30,7 +30,11 @@ saruman_score = []
 print("--Lets start this battle!--")
 for g_power, s_power in zip(gandalf_power, saruman_power):
     if g_power > s_power:
-        gandalf_score.append(True)
+        gandalf_score.append(True)   #When you are using True and False for wins and losses here and then
+                                     # converting them to 1's and 0's later, I think it is redundant as you can 
+                                     # directly store 1's and 0's in the list. Also this is making the code more complicated
+                # also the use of JOIN() is not what we want here, I think you are trying to replace the values TRUE with 1 and 
+                # FALSE with 0. Please correct me if I am wrong
         saruman_score.append(False)
         for win in gandalf_score:
             if win == True:
@@ -55,7 +59,12 @@ print("---------------------------")
 
 gandalf_win = gandalf_string.find('111')
 saruman_win = saruman_string.find('111')
-
+# When we are comparing a string such as '111' in the whole list, we are not able to make this decision while the 
+# competition is still going on, because you have already made the comparisons for all the clashes. For eg. if Gandalf 
+# had won the first three clashes, we should have declared him a winner without trying to compare the next clashes. 
+# Deos it make sense? 
+                                               
+                                             
 # check the winner
 if gandalf_win > saruman_win:
     print('Gandalf has won three times in a row!')
@@ -80,3 +89,38 @@ print(" - Standard Deviation for Gandalf = {:2.2f}".format(
     statistics.pstdev(gandalf_power)))
 print(" - Standard Deviation for Saruman = {:2.2f}".format(
     statistics.pstdev(saruman_power)))
+
+
+# TRY SOMETHING LIKE THIS 
+
+# Change the values to test the code
+
+'''
+gandalf = ['Fireball', 'Fireball', 'Fireball', 'Magic arrow', 'Fireball', 
+           'Magic arrow', 'Lightning bolt', 'Fireball', 'Magic arrow', 'Fireball']
+saruman = ['Contagion', 'Contagion', 'Black Tentacles', 'Fireball', 'Black Tentacles', 
+           'Lightning bolt', 'Magic arrow', 'Contagion', 'Magic arrow', 'Magic arrow']
+           
+SO here Gandalf should be declared winner right after the first three clashes and the competition ends!           
+'''
+
+
+'''
+Total_wins_gandalf = 0
+Total_wins_saruman = 0
+counter1 = 0  # To check three consecutive victories for gandalf
+counter2 = 0  # To check three consecutive victories for saruman
+for each clash
+    CHECK who wins it 
+        Update counters and total wins values 
+        CHECK if counter is 3 or not
+            print("Winner")
+            break
+    Implement the else conditions as necessary
+CHECK if counter is 3 again
+    print("The competition ended after", X ,"clashes")
+else:
+    CHECK who won based on total number of wins 
+        
+'''       
+# Again this is one solution , you can try something different as well. Try to keep the logc simple
